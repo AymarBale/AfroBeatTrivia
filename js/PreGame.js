@@ -20,7 +20,11 @@ scoreBoard = document.createElement('h1');
 scoreBoard.id = 'score';
 scoreBoard.textContent = score + "/5";
 document.addEventListener("DOMContentLoaded", function () {
+    var myButton = document.getElementById("startBut");
 
+    if (myButton) {
+        myButton.scrollIntoView();
+    }
 });
 
 function getRandomFileFromList(files) {
