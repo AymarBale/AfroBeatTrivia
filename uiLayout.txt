@@ -1,15 +1,5 @@
 
 
-if multiplayer go to second screen create a room and wait for people to join
+app
 
-<progress max="70" value="60"></progress>
-sounds
-{
--home sound
--button sound
--countdown sound
--correct/wrong sound
-}
-
-counter (number of right answer)
-score at the end
+  
