@@ -109,9 +109,25 @@ img {
     /* Set the desired height for the buttons */
 }
 
+#media {
+    display: none;
+}
+
 @media only screen and (max-width: 800px) {
     img {
         margin-top: -50px;
         width: 25%;
     }
+
+    #media {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 43vw;
+        font-size: 20px;
+        text-align: center;
+        margin: auto;
+    }
+
+
 }
