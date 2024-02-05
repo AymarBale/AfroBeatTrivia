@@ -50,7 +50,7 @@ body {
 img {
     position: absolute;
     width: 200px;
-
+    z-index: -100;
 }
 
 #mask1 {
@@ -107,4 +107,11 @@ img {
     /* Make the buttons take the full width of their container */
     height: 100px;
     /* Set the desired height for the buttons */
+}
+
+@media only screen and (max-width: 800px) {
+    img {
+        margin-top: -50px;
+        width: 25%;
+    }
 }
