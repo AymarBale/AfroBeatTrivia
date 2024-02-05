@@ -164,7 +164,7 @@ function startRound() {
         progressLabel.id = 'progressLabel'; // Add an ID to the progress label
         var progressBar = document.createElement('progress');
         progressBar.classList.add('html5');
-        progressBar.max = 60;
+        progressBar.max = 70;
         progressBar.addEventListener('change', function () {
             // Update the content of the span with the current value of the progress bar
             const label = document.getElementById('progressLabel');
@@ -204,8 +204,8 @@ function startRound() {
             progressBar.value = progressValue;
             const changeEvent = new Event('change');
             progressBar.dispatchEvent(changeEvent);
-            if (progressValue < 60) {
-                setTimeout(updateProgressBar, 600);
+            if (progressValue < 70) {
+                setTimeout(updateProgressBar, 700);
             } else {
                 progressBar.remove();
                 progressLabel.remove();
