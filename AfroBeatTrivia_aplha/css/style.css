@@ -1,0 +1,105 @@
+#choices {
+    width: 750px;
+    height: fit-content;
+    background-color: gold;
+    text-align: center;
+    display: inline-block;
+}
+
+body {
+    background-color: lightcyan;
+    position: relative;
+    background-image: url("../image/doodle_pattern.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+#mainWrap {
+    text-align: center;
+}
+
+#choices>:nth-child(n) {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+}
+
+#choice_1 {
+    background-color: blue;
+}
+
+#choice_2 {
+    background-color: green;
+}
+
+#choice_3 {
+    background-color: red;
+}
+
+#choice_4 {
+    background-color: pink;
+}
+
+#myBody {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 50vh;
+}
+
+.countdown {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timer {
+    font-size: 2em;
+    text-align: center;
+}
+
+#win_msg {
+    display: inline-block;
+    position: absolute;
+    top: 50vh;
+    left: 0px;
+    font-size: 32px;
+    font-family: Arial, sans-serif;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.progress-7 {
+    width: 120px;
+    height: 24px;
+    -webkit-mask:
+        radial-gradient(circle closest-side, #000 94%, #0000) 0 0/25% 100%,
+        linear-gradient(#000 0 0) center/calc(100% - 12px) calc(100% - 12px) no-repeat;
+    background:
+        linear-gradient(#25b09b 0 0) 0/0% no-repeat #ddd;
+    animation: p7 2s infinite linear;
+}
+
+@keyframes p7 {
+    100% {
+        background-size: 100%
+    }
+}

@@ -1,0 +1,110 @@
+#Box1 {
+    width: 1000px;
+    height: 1000px;
+    border-radius: 190px;
+    background-color: white;
+    position: absolute;
+    right: -190px;
+    rotate: 75deg;
+    top: 0px;
+    z-index: -12;
+}
+
+
+#score {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    font-size: 80px;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    background-image: url("../image/457.jpg");
+    height: fit-content;
+    width: 98vw;
+    border-radius: 9px;
+    backdrop-filter: blur(4px);
+}
+
+#startBut {
+    text-align: center;
+    position: absolute;
+    right: 50%;
+    /* Center horizontally */
+    transform: translateX(50%);
+    /* Center horizontally */
+    bottom: 20px;
+    /* Adjust the distance from the bottom */
+}
+
+#startBut>button {
+    letter-spacing: 5px;
+    position: relative;
+    /* Change to relative to position it within #startBut */
+    /* Remove 'bottom: 0px;' as it might interfere with centering */
+}
+
+img {
+    position: absolute;
+    width: 200px;
+
+}
+
+#mask1 {
+    top: 25vh;
+    left: 0px;
+}
+
+#mask2 {
+    top: 25vh;
+    right: 0px;
+}
+
+#choice {
+    position: relative;
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    color: white;
+    font-family: Eina01, sans-serif;
+    padding: 19px 26px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+    border: 5px solid;
+    border-image: linear-gradient(#ff7426 0, #f93a13);
+    border-image-slice: 1;
+    margin-top: 10vh;
+}
+
+#choice:disabled {
+    color: gray;
+}
+
+.button-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.button-containers {
+    text-align: center;
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    /* Adjust the gap as needed */
+}
+
+.choice-button {
+    width: 90%;
+    /* Make the buttons take the full width of their container */
+    height: 100px;
+    /* Set the desired height for the buttons */
+}
